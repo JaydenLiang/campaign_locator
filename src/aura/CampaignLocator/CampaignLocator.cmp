@@ -1,0 +1,13 @@
+<aura:component implements="force:appHostable">
+    <div id="fullheight-touchmove-disabled" class="pull-to-refresh-disabled">
+        <div>
+            <c:CampaignLocatorMapView />
+        </div>
+        <div>
+            <c:CampaignLocatorQuickFilter />
+        </div>
+        <div>
+            <c:CampaignLocatorList />
+        </div>
+    </div>
+</aura:component>

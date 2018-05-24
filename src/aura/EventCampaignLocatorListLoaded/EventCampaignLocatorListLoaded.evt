@@ -1,0 +1,11 @@
+<!--
+ - Created by jaydenliang on 2018-05-19.
+ -->
+<!--
+ - Event: EventCampaignLocatorListLoaded
+ - campaign list is loaded
+ -->
+<aura:event type="APPLICATION" description="EventCampaignLocatorListLoaded">
+    <aura:attribute name="campaigns" Type="Campaign[]"/>
+    <aura:attribute name="day_range" type="Integer"/>
+</aura:event>

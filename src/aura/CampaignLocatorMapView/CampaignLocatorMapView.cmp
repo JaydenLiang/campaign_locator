@@ -1,0 +1,13 @@
+<!--
+ - Created by jaydenliang on 2018-05-19.
+ -->
+<aura:component description="CampaignLocatorMapView">
+    <aura:handler event="c:EventCampaignLocatorListLoaded" action="{!c.onCampaignListLoaded}"/>
+    <aura:handler event="c:EventCampaignLocatorListItemSelected" action="{!c.onCampaignListItemSelected}"/>
+    <aura:attribute name="map" type="Object"/>
+    <aura:attribute name="marker_group" type="Object"/>
+    <ltng:require styles="/resource/leaflet/leaflet.css"
+                  scripts="/resource/leaflet/leaflet.js"
+                  afterScriptsLoaded="{!c.jsLoaded}" />
+    <div id="map"></div>
+</aura:component>

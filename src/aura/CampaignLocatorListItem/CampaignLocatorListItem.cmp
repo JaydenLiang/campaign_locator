@@ -1,0 +1,8 @@
+<!--
+ - Created by jaydenliang on 2018-05-19.
+ -->
+<aura:component description="CampaignLocatorListItem">
+    <aura:registerEvent name="eventCampaignLocatorListItemSelected" type="c:EventCampaignLocatorListItemSelected"/>
+    <aura:attribute name="campaign" type="Campaign"/>
+    <li><a onclick="{!c.onCampaignListItemSelected}">{!v.campaign.Name}</a></li>
+</aura:component>

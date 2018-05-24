@@ -1,0 +1,10 @@
+<!--
+ - Created by jaydenliang on 2018-05-19.
+ -->
+<!--
+ - Event: EventCampaignLocatorListItemSelected
+ - campaign list item is selected
+ -->
+<aura:event type="APPLICATION" description="EventCampaignLocatorListItemSelected">
+    <aura:attribute name="campaign" type="Campaign"/>
+</aura:event>

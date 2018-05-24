@@ -1,0 +1,11 @@
+<!--
+ - Created by jaydenliang on 2018-05-19.
+ -->
+<!--
+ - event: EventCampaignLocatorReloadList
+ - reload the campaign list
+ -->
+<aura:event type="APPLICATION" description="EventCampaignLocatorReloadList">
+    <aura:attribute name="day_range" type="Integer"/>
+    <aura:attribute name="status" type="Object"/>
+</aura:event>

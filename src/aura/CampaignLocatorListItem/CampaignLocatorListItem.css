@@ -1,0 +1,14 @@
+/**
+ * Created by jaydenliang on 2018-05-19.
+ */
+.THIS {
+    border-bottom: solid 1px #DDDDDD;
+}
+.THIS a {
+    display: block;
+    padding: 20px;
+    color: inherit;
+}
+.THIS a:active {
+    background-color: #E8F4FB;
+}

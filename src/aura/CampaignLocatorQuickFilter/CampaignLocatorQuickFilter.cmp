@@ -1,0 +1,21 @@
+<!--
+ - Created by jaydenliang on 2018-05-19.
+ -->
+
+<aura:component description="CampaignLocatorQuickFilter">
+    <aura:attribute name="day_range" type="Integer" default="7"/>
+    <aura:attribute name="status" type="Map" default="{key:'all',val:'all'}"/>
+    <aura:handler name="render" value="{!this}" action="{!c.onRender}"/>
+    <aura:handler name="change" value="{!v.day_range}" action="{!c.onDayRangeChanged}"/>
+    <aura:handler name="change" value="{!v.status}" action="{!c.onStatusChanged}"/>
+    <aura:handler event="c:EventCampaignLocatorListLoaded" action="{!c.onCampaignListLoaded}"/>
+    <ltng:require styles="/resource/bootstrapdist/css/bootstrap.min.css"/>
+    <div id="quick-filter-bar">
+        <button type="button" aura:id="btn-day-7" class="btn btn-secondary" onclick="{!c.reloadList}" data-dayrange="7">in 1 week</button>
+        <button type="button" aura:id="btn-day-14" class="btn btn-secondary" onclick="{!c.reloadList}" data-dayrange="14">in 2 weeks</button>
+        <button type="button" aura:id="btn-day-30" class="btn btn-secondary" onclick="{!c.reloadList}" data-dayrange="30">in 1 month</button>
+        <button type="button" aura:id="btn-status-inprogress" class="btn btn-secondary" onclick="{!c.reloadList}" data-statval="In Progress" data-statkey="inprogress">In Progress</button>
+        <button type="button" aura:id="btn-status-planned" class="btn btn-secondary" onclick="{!c.reloadList}" data-statval="Planned" data-statkey="planned">Planned</button>
+        <button type="button" aura:id="btn-status-all" class="btn btn-info" onclick="{!c.reloadList}" data-statval="All" data-statkey="all">All</button>
+    </div>
+</aura:component>

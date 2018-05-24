@@ -1,0 +1,24 @@
+/**
+ * Created by jaydenliang on 2018-05-19.
+ */
+.THIS {
+    width: 100%;
+    min-height: 300px;
+    overscroll-behavior: contain;
+}
+
+.THIS .marker-tooltip.status-planned {
+    color: #28a745;
+}
+
+.THIS .marker-tooltip.status-in-progress {
+    color: #ffc107;
+}
+
+.THIS .marker-tooltip.status-aborted {
+    color: red;
+}
+
+.THIS .marker-tooltip.status-completed {
+    color: black;
+}

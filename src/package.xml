@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>CampaignController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>CampaignLocator</members>
+        <members>CampaignLocatorApp</members>
+        <members>CampaignLocatorList</members>
+        <members>CampaignLocatorListItem</members>
+        <members>CampaignLocatorMapView</members>
+        <members>CampaignLocatorQuickFilter</members>
+        <members>EventCampaignLocatorListItemSelected</members>
+        <members>EventCampaignLocatorListLoaded</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>bootstrapdist</members>
+        <members>campaignlocator_ss</members>
+        <members>leaflet</members>
+        <name>StaticResource</name>
+    </types>
+    <version>42.0</version>
+</Package>
